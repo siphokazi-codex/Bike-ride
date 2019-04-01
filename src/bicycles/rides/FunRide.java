@@ -12,12 +12,10 @@ public class FunRide {
     private BicycleType bicycle;
 
     public FunRide(int maxBikes) {
-
         this.maxBikes = maxBikes;
     }
 
     public void accept(Bicycle bicycle){
-
         if (!bikes.contains(bicycle) && bikes.size() < maxBikes) {
 
             bikes.add(bicycle);
@@ -29,12 +27,10 @@ public class FunRide {
     }
 
     public int getNumOfBike(){
-
         return bikes.size();
     }
 
     public int getCountForType(BicycleType bikeType) {
-
         int bikeCount = 0;
 
         for (Bicycle type: bikes) {
@@ -45,5 +41,4 @@ public class FunRide {
 
         return bikeCount;
     }
-
 }

@@ -4,11 +4,9 @@ import bicycles.Bicycle;
 import bicycles.BikeRide;
 
 public  class BikeRideTwo implements BikeRide {
-
     private Bicycle bicycle;
 
     public BikeRideTwo (Bicycle bicycle) {
-
         this.bicycle = bicycle;
     }
 
@@ -25,7 +23,6 @@ public  class BikeRideTwo implements BikeRide {
 
     @Override
     public int currentSpeed() {
-
         return this.bicycle.currentSpeed();
     }
 }

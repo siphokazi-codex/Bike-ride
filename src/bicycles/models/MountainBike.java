@@ -5,6 +5,7 @@ import bicycles.BicycleType;
 
 
 public class MountainBike  extends BicycleBase {
+
     @Override
     public BicycleType BicycleType() {
         return BicycleType.MountainBike;
@@ -15,7 +16,6 @@ public class MountainBike  extends BicycleBase {
     }
 
     public void brake () {
-
         changeSpeed(-3);
     }
 
