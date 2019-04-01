@@ -1,4 +1,4 @@
-package specifications;
+package bicycles.specifications;
 
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,6 @@ public class TandemSpecTest {
     public void ShouldReturnBrakeSpeedForTandem() {
         bicycles.specifications.BicycleSpecification tandemSpec = new bicycles.specifications.BicycleSpecification(12, -7, Tandem);
 
-        System.out.println ("Tandem Brake Speed " + tandemSpec.getBrakeSpeed ());
         assertEquals (tandemSpec.getBrakeSpeed (), -7);
     }
 
@@ -19,7 +18,6 @@ public class TandemSpecTest {
     public void ShouldReturnAccelerationSpeedForTandem() {
         bicycles.specifications.BicycleSpecification tandemSpec = new bicycles.specifications.BicycleSpecification(12, -7, Tandem);
 
-        System.out.println ("Tandem Acceleration Speed " + tandemSpec.getAccelerationSpeed ());
         assertEquals (tandemSpec.getAccelerationSpeed (), 12);
     }
 
@@ -27,7 +25,6 @@ public class TandemSpecTest {
     public void ShouldReturnBicycleType() {
         bicycles.specifications.BicycleSpecification tandemSpec = new bicycles.specifications.BicycleSpecification(12, -7, Tandem);
 
-        System.out.println ("Bicycle Type " + tandemSpec.getBicycleType ());
         assertEquals (tandemSpec.getBicycleType (), Tandem);
     }
 }

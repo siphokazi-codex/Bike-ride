@@ -16,36 +16,34 @@ public class FunRide {
         this.maxBikes = maxBikes;
     }
 
-    public String addBikes(Bicycle bicycle){
+    public void accept(Bicycle bicycle){
 
-        if (bikes.size() < maxBikes) {
+        if (!bikes.contains(bicycle) && bikes.size() < maxBikes) {
 
             bikes.add(bicycle);
-
-            return "Accepted";
         }
         else{
 
-            return "Rejected";
+            System.out.println("rejected");
         }
     }
 
     public int getNumOfBike(){
 
-        return this.bikes.size();
+        return bikes.size();
     }
 
-    public int getBikeCountType(BicycleType bike) {
-        int getBikeCount = 0;
+    public int getCountForType(BicycleType bikeType) {
 
+        int bikeCount = 0;
 
         for (Bicycle type: bikes) {
-            if (type.BicycleType() == bike) {
-                getBikeCount += 1;
+            if (type.BicycleType() == bikeType) {
+                bikeCount += 1;
             }
         }
 
-        return getBikeCount;
+        return bikeCount;
     }
 
 }

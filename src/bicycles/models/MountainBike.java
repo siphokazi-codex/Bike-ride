@@ -15,6 +15,7 @@ public class MountainBike  extends BicycleBase {
     }
 
     public void brake () {
+
         changeSpeed(-3);
     }
 
